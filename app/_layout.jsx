@@ -4,7 +4,7 @@ import React from 'react'
 export default function _layout  () {
   return (
     <View style={styles.container}>
-      <Text>_layout</Text>
+      <Text>Movies API</Text>
       <StatusBar style="auto" />
     </View>
   )
