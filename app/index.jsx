@@ -8,7 +8,7 @@ import "../global.css";
 const Index = () => {
   return (
     <View className='flex-1 items-center justify-center bg-white'>
-      <Text>Welcome to the app!</Text>
+      <Text className='text-3xl'>Welcome to the app!</Text>
       <Link href="/profile" className='text-red-500' >go to Profile</Link>
       <StatusBar style="auto" />
     </View>
