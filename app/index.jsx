@@ -1,13 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import {  Text, View } from 'react-native';
 import React from 'react';
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+// Import your global CSS file
+import "../global.css";
 
 const Index = () => {
   return (
-    <View style={styles.container}>
+    <View className='flex-1 items-center justify-center bg-white'>
       <Text>Welcome to the app!</Text>
-      <Link href="/profile" style= {{fontSize: 20, color: "blue"}} >go to Profile</Link>
+      <Link href="/profile" className='text-red-500' >go to Profile</Link>
       <StatusBar style="auto" />
     </View>
   );
@@ -15,11 +17,3 @@ const Index = () => {
 
 export default Index;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
