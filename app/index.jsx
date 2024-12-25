@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <View className='flex-1 items-center justify-center bg-white'>
       <Text className='text-3xl font-pblack' >Aora!</Text>
-      <Link href="/profile" className='text-red-500' >go to Profile</Link>
+      <Link href="/home" className='text-red-500' >go to Home</Link>
       <StatusBar style="auto" />
     </View>
   );
