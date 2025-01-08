@@ -5,14 +5,16 @@ import "../global.css";
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from "../constants";
 import CustomerButton from '../components/CustomerButton';
-
+import { Redirect, router } from 'expo-router';
 
 const Index = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView contentContainerStyle={{ height: '100%' }}>
-        <View className="flex-1 justify-center items-center px-4">
-
+        {/* <View className="flex-1 justify-center items-center px-4"> */}
+      <View className="
+      w-full justify-center items-center min-h-[85vh] px4
+      ">  
           {/* Logo Image */}
           <Image 
             source={images.logo} 
@@ -44,13 +46,18 @@ const Index = () => {
         title="Get Started"
         containerStyle="w-full h-[50px] mt-4"
         textStyle="text-white"
-        handlePress={() => console.log("Get Started")}  
+        // handlePress={() => console.log("Get Started")} 
+        handlePress={() => router.push('/sign-in' , console.log("Get Started"))}
+ 
         />
           
           
 
         </View>
       </ScrollView>
+
+      <StatusBar backgroundColor='#161622' style={ 'light' }      
+      />
     </SafeAreaView>
   );
 };
