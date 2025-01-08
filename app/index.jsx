@@ -4,6 +4,8 @@ import { StatusBar } from 'expo-status-bar';
 import "../global.css";
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from "../constants";
+import CustomerButton from '../components/CustomerButton';
+
 
 const Index = () => {
   return (
@@ -36,6 +38,14 @@ const Index = () => {
           <Text className="text-sm font-pregular text-gray-100 text-center mt-4"> 
           Where creativity meets innovation: embark on a journey of limitless exploration with Aora.
           </Text>
+
+        {/* Buttons */} 
+        <CustomerButton 
+        title="Get Started"
+        containerStyle="w-full h-[50px] mt-4"
+        textStyle="text-white"
+        handlePress={() => console.log("Get Started")}  
+        />
           
           
 
