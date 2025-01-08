@@ -1,12 +1,11 @@
-import { View, Text , TouchableOpacity} from 'react-native'
+import { Text , TouchableOpacity} from 'react-native'
 import React from 'react'
-import { isLoading } from 'expo-font'
 
 const CustomerButton = ({title, textStyle, handlePress, containerStyle, isLoading}) => {
   return (
     <TouchableOpacity onPress={handlePress}
     activeOpacity={0.7}
-    className={`bg-secondary-200 rounded-xl 
+    className={`bg-secondary-200 rounded-lg
     ${containerStyle}
         justify-center items-center
         ${isLoading && 'opacity-50'}
