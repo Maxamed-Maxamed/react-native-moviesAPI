@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import "../global.css";
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from "../constants";
-import CustomerButton from '../components/CustomerButton';
+import CustomerButton from '../components/homecustomer/CustomerButton';
 import { Redirect, router } from 'expo-router';
 
 const Index = () => {
@@ -45,8 +45,11 @@ const Index = () => {
         <CustomerButton 
         title="Get Started"
         containerStyle="w-full h-[50px] mt-4"
-        textStyle="text-white"
-        // handlePress={() => console.log("Get Started")} 
+        buttonStyle={`bg-secondary-200 rounded-lg`}
+        textStyle="text-primary font-psemibold text-lg"
+        
+
+  
         handlePress={() => router.push('/sign-in' , console.log("Get Started"))}
  
         />
