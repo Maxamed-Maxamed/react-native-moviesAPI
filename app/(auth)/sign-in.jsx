@@ -4,7 +4,8 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants'
-import FormField from '../../components/FormField'
+import FormField from '../../components/sign-in-customer/FormField'
+
 
 const SignIn = () => {
   const [form, setForm] = useState({
